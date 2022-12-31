@@ -1,0 +1,22 @@
+// prettier-ignore
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./",
+    "lib": ["es6"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "types": ["reflect-metadata", "styled-components-react-native"],
+    "paths": {
+      "@data/*": ["./src/data/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@presentation/*": ["./src/presentation/*"],
+      "@infrastructure/*": ["./src/infrastructure/*"]
+    }
+  },
+  "extends": "@tsconfig/react-native/tsconfig.json",
+}
